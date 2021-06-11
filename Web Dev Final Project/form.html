@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create your Build</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+        <link rel="stylesheet" href="form-styling.css">
+
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <h1>Create Your Build</h1>
+
+        <br>
+
+        <form>
+            <p>Do you know what parts you want?</p>
+            <div>
+                <input type="radio" id="yes" name="radio" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="radio" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <br>
+
+            <p>If you said yes to the last question click this link to choose your parts:</p>
+            <a href="form2.html">Choose Your Parts</a>
+
+            <br>
+
+            <p>If you said no to the last question, what is your budget?</p>
+            <div>
+                <input type="radio" id="500" name="budget" value="500">
+                <label for="500">$500</label>
+                <input type="radio" id="1000" name="budget" value="1000">
+                <label for="1000">$1000</label>
+                <input type="radio" id="1500" name="budget" value="1500">
+                <label for="1500">$1500</label>
+                <input type="radio" id="2000" name="budget" value="2000">
+                <label for="2000">$2000 - $2500</label>
+                <input type="radio" id="3000" name="budget" value="3000">
+                <label for="3000">$3000 +</label>
+                <input type="radio" id="other" name="budget" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <br>
+
+            <p>If you answered other or would like to be specific enter your budget below:</p>
+            <input type="text" id="other-budget" name="other-budget">
+
+            <div>
+                <p>What will you be using your computer for?</p>
+                <input type="radio" id="gaming" name="use" value="gaming">
+                <label for="gaming">Gaming</label>
+                <input type="radio" id="basic-usage" name="use" value="basic-usage">
+                <label for="basic-usage">Basic Use</label>
+                <input type="radio" id="streaming" name="use" value="streaming">
+                <label for="streaming">Streaming</label>
+                <input type="radio" id="video-editing" name="use" value="video-editing">
+                <label for="video-editing">Video Editing</label>
+                <input type="radio" id="modeling-rendering" name="use" value="modeling-rendering">
+                <label for="modeling-rendering">Modeling and Rendering</label>
+            </div>
+        </form>
+    </body>
+</html>

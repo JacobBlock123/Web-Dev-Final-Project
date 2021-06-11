@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+        <style>
+            h1 {
+                text-align: center;
+                color: gold;
+                font-size: 250%;
+            }
+
+            body {
+                background-color: #2541b2;
+            }
+
+            #img1 {
+                height: 750px;
+                width: 600px;
+            }
+
+            #flexbox-container > p {
+                color: #e5d549;
+                width: 500px;
+                font-size: 150%;
+            }
+
+            #flexbox-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .links {
+                color: yellow;
+                padding: 15px;
+                font-size: 150%;
+                height: 100px;
+            }
+
+            .links:visited {
+                color: orange;
+            }
+
+            .links:hover {
+                color: gold;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 95%;
+                list-style-type: none;
+                justify-content: space-around;
+                align-items: center;
+                border: 5px solid #e5d549;
+                height: 100px;
+                background-color: #1768ac;
+            }
+
+            #footer {
+                column-count: 3;
+                column-gap: 10px;
+                color: black;
+                column-rule: 1px solid black;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                background-color: #e5d549;
+            }
+
+            #footer > p {
+                column-span: 1;
+                margin: auto 0px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>About Us</h1>
+
+        <br>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="links" id="link1">Home</a>
+                </li>
+
+                <li>
+                    <a href="store.html" class="links" id="link2">Store</a>
+                </li>
+
+                <li>
+                    <a href="form.html" class="links" id="link3">Make Your Build</a>
+                </li>
+
+                <li>
+                    <a href="about-us.html" class="links" id="link4">About Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <br>
+
+        <div id="flexbox-container">
+            <img id="img1" src="https://cwsmgmt.corsair.com/responsive/img/1000d/style-product.png" alt="computer tower with rgb">
+
+            <p>
+                RGB Heaven was created to fulfill your custom computers needs. We know not everyone wants
+                to spend the time to build their own computer and some people don't know how to build one.
+                That shouldn't stop you from getting your dream computer though. Simply enter the components
+                you want or you can even get part advice from the experts at RGB Heaven and then we will build
+                you your dream computer.
+            </p>
+        </div>
+
+        <div id="footer">
+            <p>
+                Email us at: rgbHeavenComputers@gmail.com <br>
+                Call us at: 1-800-I-LOVE-RGB <br>
+                Or cheeck out our Facebook: @rgbHeaven
+            </p>
+
+            <p>
+                Privacy Policy <br>
+                Terms Of Use <br>
+                Refunds
+            </p>
+
+            <p>
+                Copyright &copy; RGB Heaven Inc. All rights reserved <br>
+                Winninpeg, MB <br>
+            </p>
+        </div>
+    </body>
+</html>

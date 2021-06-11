@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Choose Your Parts</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+        <link rel="stylesheet" href="form-styling.css">
+    </head>
+
+    <body>
+        <h1>Choose Your Parts</h1>
+
+        <form>
+            <p>What CPU are you using?</p>
+            <input type="text" id="cpu" name="cpu" class="text">
+
+            <p>What GPU are you using?</p>
+            <input type="text" id="gpu" name="gpu" class="text">
+
+            <p>What Motherboard are you using?</p>
+            <input type="text" id="mobo" name="mobo" class="text">
+
+            <p>What case do you want?</p>
+            <input type="text" id="case" name="case" class="text">
+
+            <p>What RAM do you want?</p>
+            <input type="text" id="ram" name="ram" class="text">
+
+            <br>
+
+            <div>
+                <p>What kind of storage do you want?</p>
+                <input type="radio" id="hdd" name="storage" value="hdd">
+                <label for="hdd">Hard Drive</label>
+                <input type="radio" id="ssd" name="storage" value="ssd">
+                <label for="ssd">Solid State Drive</label>
+                <input type="radio" id="both" name="storage" value="both">
+                <label for="both">Both</label>
+            </div>
+
+            <br>
+
+            <div>
+                <p>If you chose SSD or Both what kind of SSD do you want?</p>
+                <input type="radio" id="2.5" name="sdd-type" value="2.5">
+                <label for="2.5">2.5 Inch Sata</label>
+                <input type="radio" id="pci" name="sdd-type" value="pci">
+                <label for="pci">PCI SSD</label>
+                <input type="radio" id="m.2" name="sdd-type" value="m.2">
+                <label for="gaming">M.2 SSD</label>
+            </div>
+
+            <br>
+
+            <p>How much storage do you want?</p>
+            <input type="text" id="amount" name="amount" class="text">
+
+            <br>
+
+            <p>If there is a specific power supply you want enter it below:</p>
+            <input type="text" id="psu" name="psu" class="text">
+
+            <br>
+
+            <div>
+                <p>Would you like a custom water cooling loop?</p>
+                <input type="radio" id="yes" name="water-cooling" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="water-cooling" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <br>
+
+            <div>
+                <p>If you answered yes to the last question what parts wouuld you like water-cooled?</p>
+                <input type="checkbox" id="CPU" name="CPU" value="CPU">
+                <label for="CPU">CPU</label>
+                <input type="checkbox" id="GPU" name="GPU" value="GPU">
+                <label for="gpu">GPU</label>
+                <input type="checkbox" id="SSD" name="SSD" value="SSD">
+                <label for="cpu">SSD</label>
+                <input type="checkbox" id="MOBO" name="MOBO" value="MOBO">
+                <label for="MOBO">Motherboard (CPU and Motherboard Mono-block)</label>
+                <input type="checkbox" id="RAM" name="RAM" value="RAM">
+                <label for="RAM">RAM</label>
+            </div>
+        </form>
+    </body>
+</html>

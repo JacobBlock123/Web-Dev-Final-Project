@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Computer Builds</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+        <style>
+            body {
+                background-color: #2541b2;
+            }
+
+            h1 {
+                text-align: center;
+                color: gold;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            #div1 {
+                display: grid;
+                grid-template-rows: 400px 400px;
+                grid-template-areas: "img1 p1";
+                width: 100%;
+                background-color: #e5d549;
+                height: 450px;
+            }
+
+            #div2 {
+                display: grid;
+                grid-template-rows: 400px 400px;
+                grid-template-areas: "p2 img2";
+                width: 100%;
+                background-color: #1768ac;
+                height: 450px;
+            }
+
+            #img1 {
+                grid-area: img1;
+                height: 450px;
+                width: 350px;
+            }
+
+            #img2 {
+                grid-area: img2;
+                height: 450px;
+                width: 625px;
+            }
+
+            #p1 {
+                grid-area: p1;
+                font-size: 125%;
+                width: 300px;
+                padding: 50px;
+            }
+
+            #p2 {
+                grid-area: p2;
+                font-size: 125%;
+                width: 300px;
+                color: #dddddd;
+                padding: 50px;
+            }
+
+            .links {
+                color: yellow;
+                padding: 15px;
+                font-size: 150%;
+                height: 100px;
+            }
+
+            .links:visited {
+                color: orange;
+            }
+
+            .links:hover {
+                color: gold;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 95%;
+                list-style-type: none;
+                justify-content: space-around;
+                align-items: center;
+                border: 5px solid #e5d549;
+                height: 100px;
+                background-color: #1768ac;
+            }
+
+            #footer {
+                column-count: 3;
+                column-gap: 10px;
+                color: black;
+                column-rule: 1px solid black;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                background-color: #e5d549;
+            }
+
+            p {
+                column-span: 1;
+                margin: auto 0px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>RGB Heaven Custom Computers</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="links" id="link1">Home</a>
+                </li>
+
+                <li>
+                    <a href="store.html" class="links" id="link2">Store</a>
+                </li>
+
+                <li>
+                    <a href="form.html" class="links" id="link3">Make Your Build</a>
+                </li>
+
+                <li>
+                    <a href="about-us.html" class="links" id="link4">About Us</a>
+                </li>
+            </ul>
+        </nav>
+
+            <div id="div1">
+                <img id="img1" src="https://i.dell.com/is/image/DellContent//content/dam/global-asset-library/Products/Desktops/XPS/8940_rkl/xs8940_csy_00015rf_wh_rkl.psd?fmt=pjpg&pscan=auto&scl=1&wid=2297&hei=3329&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&size=2297,3329" alt="white dell xps">
+                <p id="p1">
+                    Tired of poorly made and booring pre-built computers? Do you hate how they cheap out on
+                    certain things like the motherboard and cooling? Do you wish you could have your own custom
+                    built computer but you don't know how to build one? If you said yes to all of these
+                    questions, you're in the right place!
+                </p>
+            </div>
+
+            <div id="div2">
+                <img id="img2" src="https://i.ytimg.com/vi/VkXH-www2M8/maxresdefault.jpg" alt="rgb computer">
+                <p id="p2">
+                    The experts at RGB Heaven will build you your dream computer. Just enter the parts you
+                    want, or even get an RGB Heaven employee to giev you advice on parts youu might want.
+                    We will build you any pc you want and we even offer a warranty and IT assistance. So
+                    if you are tired of ppre-built computers and want your own custom pc shop at RGB Heaven.
+                </p>
+            </div>
+
+            <div id="footer">
+                <p>
+                    Email us at: rgbHeavenComputers@gmail.com <br>
+                    Call us at: 1-800-I-LOVE-RGB <br>
+                    Or cheeck out our Facebook: @rgbHeaven
+                </p>
+
+                <p>
+                    Privacy Policy <br>
+                    Terms Of Use <br>
+                    Refunds
+                </p>
+
+                <p>
+                    Copyright &copy; RGB Heaven Inc. All rights reserved <br>
+                    Winninpeg, MB <br>
+                </p>
+            </div>
+    </body>
+</html>
