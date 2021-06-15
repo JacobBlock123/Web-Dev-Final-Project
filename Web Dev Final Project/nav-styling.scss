@@ -1,0 +1,65 @@
+.links {
+    color: yellow;
+    padding: 15px;
+    font-size: 150%;
+    height: 100px;
+}
+
+.links:visited {
+    color: orange;
+}
+
+.links:hover {
+    color: gold;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid #e5d549;
+    height: 100px;
+    background-color: #1768ac;
+    position: relative;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+@media all and (max-width: 750px) {
+    .links {
+        font-size: 125%;
+        padding: 5px;
+    }
+
+    ul {
+        width: 90%;
+        border: 3px solid #e5d549;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .links {
+        font-size: 90%;
+        padding: 0px;
+    }
+
+    ul {
+        width: 88%;
+        border: 1px solid #e5d549;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}

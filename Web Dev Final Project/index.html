@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Computer Builds</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+        <!--link to external stylesheett-->
+        <link rel="stylesheet" href="nav-styling.css">
+
+        <style>
+
+            /*main body styling*/
+            body {
+                background-color: #2541b2;
+            }
+
+            /*header styling*/
+            h1 {
+                text-align: center;
+                color: gold;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            /*styling for the divs which are displayed as css grid*/
+            #div1 {
+                display: grid;
+                grid-template-rows: 400px 400px;
+                grid-template-areas: "img1 p1";
+                width: 100%;
+                background-color: #e5d549;
+                height: 450px;
+            }
+
+            #div2 {
+                display: grid;
+                grid-template-rows: 400px 400px;
+                grid-template-areas: "p2 img2";
+                width: 100%;
+                background-color: #1768ac;
+                height: 450px;
+            }
+
+            /*image styling*/
+            #img1 {
+                grid-area: img1;
+                height: 450px;
+                width: 350px;
+            }
+
+            #img2 {
+                grid-area: img2;
+                height: 450px;
+                width: 625px;
+            }
+
+            /*paragraph styling*/
+            #p1 {
+                grid-area: p1;
+                font-size: 125%;
+                width: 300px;
+                padding: 50px;
+            }
+
+            #p2 {
+                grid-area: p2;
+                font-size: 125%;
+                width: 300px;
+                color: #dddddd;
+                padding: 50px;
+            }
+
+            /*styling for the footer and the paragraphs inside the footer*/
+            #footer {
+                column-count: 3;
+                column-gap: 10px;
+                color: black;
+                column-rule: 1px solid black;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                background-color: #e5d549;
+            }
+
+            p {
+                column-span: 1;
+                margin: auto 0px;
+            }
+
+            /*styling for the slideshow container*/
+            #image-slides {
+            width: 900px;
+            position: relative;
+            margin: auto;
+            }
+
+            .images {
+            display: none;
+            }
+
+            /*styling for the previous and nnext buttons on the slideshow*/
+            .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            }
+
+            .next {
+            right: 100px;
+            border-radius: 3px 0 0 3px;
+            }
+
+            .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+            }
+
+            /*styling for the slide numbber text*/
+            .slide-number {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            }
+
+            /*styling for the fade animation when you switch slides*/
+            .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+            }
+
+            @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>RGB Heaven Custom Computers</h1>
+
+        <!--navigation bar-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="links" id="link1">Home</a>
+                </li>
+
+                <li>
+                    <a href="store.html" class="links" id="link2">Store</a>
+                </li>
+
+                <li>
+                    <a href="form.html" class="links" id="link3">Make Your Build</a>
+                </li>
+
+                <li>
+                    <a href="about-us.html" class="links" id="link4">About Us</a>
+                </li>
+            </ul>
+        </nav>
+
+            <div id="div1">
+                <img id="img1" src="https://i.dell.com/is/image/DellContent//content/dam/global-asset-library/Products/Desktops/XPS/8940_rkl/xs8940_csy_00015rf_wh_rkl.psd?fmt=pjpg&pscan=auto&scl=1&wid=2297&hei=3329&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&size=2297,3329" alt="white dell xps">
+                <p id="p1">
+                    Tired of poorly made and booring pre-built computers? Do you hate how they cheap out on
+                    certain things like the motherboard and cooling? Do you wish you could have your own custom
+                    built computer but you don't know how to build one? If you said yes to all of these
+                    questions, you're in the right place!
+                </p>
+            </div>
+
+            <div id="div2">
+                <img id="img2" src="https://i.ytimg.com/vi/VkXH-www2M8/maxresdefault.jpg" alt="rgb computer">
+                <p id="p2">
+                    The experts at RGB Heaven will build you your dream computer. Just enter the parts you
+                    want, or even get an RGB Heaven employee to giev you advice on parts youu might want.
+                    We will build you any pc you want and we even offer a warranty and IT assistance. So
+                    if you are tired of ppre-built computers and want your own custom pc shop at RGB Heaven.
+                </p>
+            </div>
+
+            <br>
+
+            <!--slide show container and images-->
+            <div id="image-slides">
+
+                <div class="images fade">
+                    <div class="slide-number">1 / 3</div>
+                    <img src="https://cdn.mos.cms.futurecdn.net/wNWsKo2sSt4xULqNbRCX6J-1200-80.jpg" style="width:800px" style="height: auto;">
+                </div>
+            
+                <div class="images fade">
+                    <div class="slide-number">2 / 3</div>
+                    <img src="https://cdn1.dotesports.com/wp-content/uploads/2020/10/26064517/Obsidian-FEature.jpg" style="width:800px" style="height: auto;">
+                </div>
+            
+                <div class="images fade">
+                    <div class="slide-number">3 / 3</div>
+                    <img src="https://assets3.razerzone.com/ti0ZAJAnDv8MDaL2W08HWy0QCNc=/767x511/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhc7%2Fhfe%2F9094273597470%2Fchroma-argb-controller-1500x1000-gallery-hero-20201022.jpg" style="width:800px" style="height: auto;">
+                </div>
+            
+                <!--
+                    previous and next buttons for the slideshow which change the slide when pressed
+                    and change the plusSlides variable
+                -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <br>
+
+            <script>
+                // this variable is the slide number that is currently being displayed
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                // these functions changes the slideIndex and showSlides variable and then displays the new slide
+                function plusSlides(n) 
+                {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) 
+                {
+                    showSlides(slideIndex = n);
+                }
+
+                /*
+                This function creates the slides variable which will get the images by their class name
+                
+                */
+                function showSlides(n) {
+                    var i;
+
+                    var slides = document.getElementsByClassName("images");
+
+                    if (n > slides.length) {slideIndex = 1}
+                    
+                    if (n < 1) {slideIndex = slides.length}
+
+                    for (i = 0; i < slides.length; i++) 
+                    {
+                        slides[i].style.display = "none";
+                    }
+
+                    slides[slideIndex-1].style.display = "block";
+                }
+            </script>
+
+            <div id="footer">
+                <p>
+                    Email us at: rgbHeavenComputers@gmail.com <br>
+                    Call us at: 1-800-I-LOVE-RGB <br>
+                    Or cheeck out our Facebook: @rgbHeaven
+                </p>
+
+                <p>
+                    Privacy Policy <br>
+                    Terms Of Use <br>
+                    Refunds
+                </p>
+
+                <p>
+                    Copyright &copy; RGB Heaven Inc. All rights reserved <br>
+                    Winninpeg, MB <br>
+                </p>
+            </div>
+    </body>
+</html>

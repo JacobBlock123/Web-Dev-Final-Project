@@ -1,9 +1,11 @@
+/*main body styling*/
 body {
   background-color: #2541b2;
 }
 
+/*form styling*/
 form {
-  color: #e5d549;
+  color: #dddddd;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,6 +28,12 @@ form {
   color: whitesmoke;
 }
 
+#other-budget:focus {
+  background-color: whitesmoke;
+  color: black;
+}
+
+/*textt input styling*/
 .text {
   background-color: #1768ac;
   border: 3px solid darkgoldenrod;
@@ -37,11 +45,7 @@ form {
   color: black;
 }
 
-#other-budget:focus {
-  background-color: whitesmoke;
-  color: black;
-}
-
+/*header and link styling*/
 h1 {
   color: #e5d549;
   text-align: center;
